@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <p className={styles.space}>space</p>
           <p className={styles.aboutOnTheWeb}>on the web.</p>
-          <p className={styles.aboutText}> (Scroll Down)</p>
+          <p className={styles.aboutText}> Scroll Down</p>
         </div>
       </main>
     </>
