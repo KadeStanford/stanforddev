@@ -69,7 +69,7 @@ function About() {
       className={`${styles.aboutPage} ${isScrolled && styles.fadeIn}`}
       style={isScrolled ? { display: "flex" } : { display: "none" }}
     >
-      <h1 className={styles.aboutus}>I'm Kade Stanford, </h1>
+      <h1 className={styles.aboutus}>I am Kade Stanford, </h1>
       <p className={styles.aboutblurb}>founder of Stanford Development Solutions</p>
       <p className={styles.aboutblurb}>&</p>
       <p className={styles.aboutblurb}>a developer with a commitment to your vision</p>
