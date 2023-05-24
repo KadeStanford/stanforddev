@@ -7,3 +7,7 @@ html {
 body::-webkit-scrollbar {
   display: none;
 }
+
+a{
+  color: #a1cefb;
+}

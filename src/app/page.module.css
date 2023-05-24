@@ -69,6 +69,10 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 
 .fadeIn {
@@ -81,41 +85,147 @@
 @keyframes opacityIn {
   0% {
     opacity: 0;
+    scale: 0.9;
   }
+
+  50% {
+    opacity: 0.5;
+    scale: 1.1;
+  }
+
   100% {
     opacity: 1;
+    scale: 1;
   }
 }
+
+.float {
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+  @keyframes float{
+    0%{
+      transform:translatey(0px);
+    }
+    50%{
+      transform:translatey(-10px);
+    }
+    100%{
+      transform:translatey(0px);
+    }
+  }
+
+  .aboutText{
+    font-family: "Paytone One", sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    text-shadow: 0 0 10px #000;
+  }
+
 @media screen and (min-width: 601px) {
   .kadeimage {
     border-radius: 10px;
     width: 27em;
     height: 30em;
-    margin-left: 71%;
-    margin-top: -60vh;
+    margin-left: 67%;
+    margin-top: -17%;
     box-shadow: 1px 1px 10px 8px rgba(0, 0, 0, 0.3);
     will-change: transform;
+  } 
+
+
+  .educationTitle{
+    text-decoration: underline;
+    text-underline-position: under;
   }
+  
+  .education {
+      margin-top: -36%;
+      margin-left: 35.2%;
+      font-size: 1.2vw;
+      text-shadow: 0 0 10px #000;
+      border: #fff solid 5px;
+      width: 30%;
+      border-radius: 10px;
+      height: auto;
+    }
+
+    .educationText{
+      list-style-type: none;
+    }
+
+    .projectsTitle{
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+    
+    .projects {
+        margin-top: -10.7%;
+        margin-left: 69%;
+        font-size: 1.67vw;
+        text-shadow: 0 0 10px #000;
+        border: #fff solid 5px;
+        width: 30%;
+        border-radius: 10px;
+        height: auto;
+      }
+  
+      .projectsText{
+        list-style-type: none;
+      }
+
+      .contactTitle{
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+      
+      .contact {
+          margin-top: -30.4%;
+          margin-left: 69%;
+          font-size: 1.67vw;
+          text-shadow: 0 0 10px #000;
+          border: #fff solid 5px;
+          width: 30%;
+          border-radius: 10px;
+          padding-bottom: 5%;
+          height: auto;
+        }
+    
+        .contactText{
+          list-style-type: none;
+        }
 
   .aboutPage {
     color: #fff;
     font-family: "Paytone One", sans-serif;
     text-align: center;
-    margin-left: -45%;
-    margin-top: 10%;
+    width: 100%;
+    margin-top: 0%;
     display: flex;
     flex-direction: column;
+    columns: 3;
+    will-change: transform;
+    height: 100vh;
+
   }
 
   .aboutus {
-    font-size: 3.3em;
+    font-size: 3vw;
+    margin-left: -68%;
     text-shadow: 0 0 5px #000;
   }
 
   .aboutblurb {
     width: 20%;
-    font-size: 2em;
-    margin-left: 40%;
+    font-size: 2.5vw;
+    margin-left: 6.3%;
     margin-top: -1%;
     display: flex;
     flex-direction: column;
