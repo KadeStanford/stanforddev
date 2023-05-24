@@ -36,9 +36,10 @@
   font-size: 2.5rem;
   color: #fff;
   text-align: center;
-  margin: 1vh 0% 0% 0%;
+  margin: 10vh 0% 0% 0%;
   padding: 0;
   line-height: 1.5;
+  text-shadow: 0 0 10px #000;
 }
 
 .space {
@@ -49,9 +50,6 @@
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 2px white;
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
 }
 
 .aboutOnTheWeb {
@@ -60,13 +58,88 @@
   font-size: 2.5rem;
   color: #fff;
   text-align: center;
+  text-shadow: 0 0 10px #000;
 }
 
 .about {
-  margin-top: 10%;
+  margin-top: 8vh;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.fadeIn {
+  animation-name: opacityIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+}
+
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 601px) {
+  .kadeimage {
+    border-radius: 10px;
+    width: 27em;
+    height: 30em;
+    margin-left: 71%;
+    margin-top: -60vh;
+    box-shadow: 1px 1px 10px 8px rgba(0, 0, 0, 0.3);
+    will-change: transform;
+  }
+
+  .aboutPage {
+    color: #fff;
+    font-family: "Paytone One", sans-serif;
+    text-align: center;
+    margin-left: -45%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutus {
+    font-size: 3.3em;
+    text-shadow: 0 0 5px #000;
+  }
+
+  .aboutblurb {
+    width: 20%;
+    font-size: 2em;
+    margin-left: 40%;
+    margin-top: -1%;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 0 0 10px #000;
+  }
+
+  .contactPage {
+    margin-top: -150vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kadeimage {
+    border-radius: 10px;
+    width: 78%;
+    height: 43vh;
+    will-change: transform;
+  }
+
+  .aboutPage {
+    color: #fff;
+    font-family: "Paytone One", sans-serif;
+    text-align: center;
+    margin-top: 40%;
+    will-change: transform;
+  }
 }
