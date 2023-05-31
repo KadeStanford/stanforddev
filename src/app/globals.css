@@ -1,5 +1,4 @@
 html {
-  height: 101vh;
   background: linear-gradient(to bottom, #000000 0%, #ffffff 100%);
   background-size: cover;
 }
@@ -9,5 +8,43 @@ body::-webkit-scrollbar {
 }
 
 a{
-  color: #a1cefb;
+  color: #2c8ff1;
+  text-shadow: 0 0 px #000;
+}
+
+@media screen and (min-width: 100px) and (max-width: 399px) {
+  html{
+    height: 350vh;
+  }
+
+  body{
+  }
+}
+
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  html{
+    height: 330vh;
+  }
+
+  body{
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  html{
+    height: 300vh;
+  }
+
+  body{
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+  html{
+    height: 300vh;
+  }
+
+  body{
+  }
 }

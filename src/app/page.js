@@ -29,6 +29,7 @@ export default function Home() {
   return (
     <>
       <main className={`${styles.main} ${!isScrolled && styles.fadeIn}`}>
+        
         <div className={styles.about}>
           <p className={styles.aboutTextBlurb}>
             Stanford Development Solutions makes the most of your
@@ -69,7 +70,7 @@ function About() {
       className={`${styles.aboutPage} ${isScrolled && styles.fadeIn}`}
       style={isScrolled ? { display: "flex" } : { display: "none" }}
     >
-      <h1 className={styles.aboutus}>I am Kade Stanford, </h1>
+      <h1 className={styles.aboutus}>I am Kade Stanford </h1>
       <p className={styles.aboutblurb}>founder of Stanford Development Solutions</p>
       <p className={styles.aboutblurb}>&</p>
       <p className={styles.aboutblurb}>a developer with a commitment to your vision</p>
@@ -82,13 +83,21 @@ function About() {
         </p>
 
         <p className={styles.educationText}>CMPS Classes:</p>
+        <p className={styles.spacer}> </p>
         <li className={styles.educationText}>CMPS 161 - Algorithm Design and Implementation I</li>
+        <p className={styles.spacer}> </p>
         <li className={styles.educationText}>CMPS 235 - Website Design and Construction</li>
+        <p className={styles.spacer}> </p>
         <li className={styles.educationText}>CMPS 257 - Discrete Structures</li>
+        <p className={styles.spacer}> </p>
         <li className={styles.educationText}>CMPS 280 - Algorithm Design and Implementation II</li>
+        <p className={styles.spacer}> </p>
         <li className={styles.educationText}>CMPS 285 - Software Engineering</li>
+        <p className={styles.spacer}></p>
         <li className={styles.educationText}>CMPS 290 - Computer Organization</li>
+        <p className={styles.spacer}> </p>
         <li className={styles.educationText}>CMPS 390 - Data Structures</li>
+        <p className={styles.spacer}> </p>
         </div>
 
         <div className={styles.projects}>
