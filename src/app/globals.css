@@ -20,9 +20,6 @@ li{
   html{
     height: 350vh;
   }
-
-  body{
-  }
 }
 
 
@@ -30,25 +27,16 @@ li{
   html{
     height: 330vh;
   }
-
-  body{
-  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   html{
     height: 300vh;
   }
-
-  body{
-  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 2000px) {
   html{
     height: 300vh;
-  }
-
-  body{
   }
 }
