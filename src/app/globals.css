@@ -12,6 +12,10 @@ a{
   text-shadow: 0 0 px #000;
 }
 
+li{
+  list-style-type: none;
+}
+
 @media screen and (min-width: 100px) and (max-width: 399px) {
   html{
     height: 350vh;
