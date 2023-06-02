@@ -103,6 +103,7 @@ function About() {
         <div className={styles.projects}>
         <h2 className={styles.projectsTitle}>Projects</h2>
         <li className={styles.projectsText}><a href="https://www.libertyhousespecialties.com">Liberty House Specialties</a></li>
+        <li className={styles.projectsText}><a href="https://foodfate.vercel.app">FoodFate</a></li>
 </div>
 
 <div className={styles.contact}>
