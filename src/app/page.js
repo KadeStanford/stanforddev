@@ -75,6 +75,12 @@ function About() {
       <p className={styles.aboutblurb}>&</p>
       <p className={styles.aboutblurb}>a developer with a commitment to your vision</p>
 
+      <div className={styles.projects}>
+        <h2 className={styles.projectsTitle}>Projects</h2>
+        <li className={styles.projectsText}><a href="https://www.libertyhousespecialties.com">Liberty House Specialties</a></li>
+        <li className={styles.projectsText}><a href="https://foodfate.vercel.app">FoodFate</a></li>
+</div>
+
       <div className={styles.education}>
         <h2 className={styles.educationTitle}>Education</h2>
         <p className={styles.educationText}>Southeastern Louisiana University</p>
@@ -100,11 +106,7 @@ function About() {
         <p className={styles.spacer}> </p>
         </div>
 
-        <div className={styles.projects}>
-        <h2 className={styles.projectsTitle}>Projects</h2>
-        <li className={styles.projectsText}><a href="https://www.libertyhousespecialties.com">Liberty House Specialties</a></li>
-        <li className={styles.projectsText}><a href="https://foodfate.vercel.app">FoodFate</a></li>
-</div>
+        
 
 <div className={styles.contact}>
         <h2 className={styles.contactTitle}>Contact</h2>
