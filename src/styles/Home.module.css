@@ -385,14 +385,3 @@
   transform: scale(1.1);
   cursor: pointer;
 }
-
-.contactForm__header {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  font-family: "Hando", sans-serif;
-  font-weight: 400;
-  color: #ffffff;
-  text-shadow: -2px 0px 1px rgba(3, 87, 255, 0.9);
-  word-wrap: break-word;
-  font-size: calc(1.5rem + 1vw);
-}
