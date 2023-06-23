@@ -385,3 +385,16 @@
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.contactForm__header {
+  font-family: "Hando";
+  font-size: calc(2.5rem + 1vw);
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: -2px 0px 1px rgba(3, 87, 255, 0.9);
+  background-color: rgba(44, 41, 41, 0.3);
+  width: fit-content;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.8);
+}
