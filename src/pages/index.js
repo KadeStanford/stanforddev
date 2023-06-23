@@ -157,6 +157,11 @@ export default function Home() {
                   <button className={styles.buttonSend} type="submit">
                     Send Message
                   </button>
+                  <h2 className={styles.contactForm__text}> - OR - </h2>
+                  <h2 className={styles.contactForm__text}>
+                    {" "}
+                    E-mail: stanforddevcontact@gmail.com
+                  </h2>
                 </div>
               </form>
             </div>
