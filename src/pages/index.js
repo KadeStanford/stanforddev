@@ -128,10 +128,10 @@ export default function Home() {
         <div id="aboutMe" className={styles.container}>
           <div className={styles.aboutme}>
             <h3 className={styles.aboutme__title}>About Me</h3>
+
             <p className={styles.aboutme__text}>
-              I&#39;m a full-time student and freelance web developer. I love
-              working with clients 1 on 1 to develop stunning websites that will
-              make you say:
+              I love working with clients 1 on 1 to develop stunning websites
+              that will make you say:
             </p>
             <img className={styles.quote} src="/images/text.png" alt="quote" />
           </div>
@@ -149,7 +149,7 @@ export default function Home() {
                   <label htmlFor="name">Name:</label>
                   <input id="name" name="name" type="text" required />
 
-                  <label htmlFor="email">Email:</label>
+                  <label htmlFor="email">Your Contact Email:</label>
                   <input id="email" name="email" type="email" required />
 
                   <label htmlFor="message">Message:</label>
@@ -201,16 +201,30 @@ export default function Home() {
               <div className={styles.myProjects__project}>
                 <h4 className={styles.myProjects__project__title}>
                   <a
+                    href="https://bigeat.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    *NEW* Click here to visit: Big Eats
+                  </a>
+                </h4>
+                <p className={styles.myProjects__project__text}>
+                  A practice site I made for a fake restaurant.
+                </p>
+              </div>
+              <div className={styles.myProjects__project}>
+                <h4 className={styles.myProjects__project__title}>
+                  <a
                     href="https://www.libertyhousespecialties.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Link: Liberty House Specialties
+                    Click here to visit: Liberty House Specialties
                   </a>
                 </h4>
                 <p className={styles.myProjects__project__text}>
                   A website I created for a local business. Created using
-                  Next.JS and CSS
+                  Next.JS.
                 </p>
               </div>
               <div className={styles.myProjects__project}>
@@ -220,11 +234,11 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Link: Food Fate
+                    Click here to visit: Food Fate
                   </a>
                 </h4>
                 <p className={styles.myProjects__project__text}>
-                  A fun website I create that uses googleMaps API to find
+                  A fun website I created that uses googleMaps API to find
                   resturants nearby and picks one at random.
                 </p>
               </div>
@@ -235,11 +249,11 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Link: Fit-Fuel
+                    Click here to visit: Fit-Fuel
                   </a>
                 </h4>
                 <p className={styles.myProjects__project__text}>
-                  A fake gym website I created using Next.js and CSS.
+                  A fake gym website I created using Next.js.
                 </p>
               </div>
             </div>
