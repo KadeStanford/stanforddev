@@ -201,6 +201,20 @@ export default function Home() {
               <div className={styles.myProjects__project}>
                 <h4 className={styles.myProjects__project__title}>
                   <a
+                    href="https://atlas-it.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    *NEW* Click here to visit: Atlas IT Solutions
+                  </a>
+                </h4>
+                <p className={styles.myProjects__project__text}>
+                  A minimalist website for an IT solutions firm.
+                </p>
+              </div>
+              <div className={styles.myProjects__project}>
+                <h4 className={styles.myProjects__project__title}>
+                  <a
                     href="https://bigeat.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
