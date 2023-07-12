@@ -114,7 +114,7 @@ export default function Home() {
             <h1 className={styles.kade__title}>Who am I?</h1>
             <img
               className={styles.kade__image}
-              src="/images/kade.jpg"
+              src="/images/kadepro.jpg"
               alt="kade"
             />
             <p className={styles.kade__text}>Kade Stanford</p>
