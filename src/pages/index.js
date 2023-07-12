@@ -119,8 +119,7 @@ export default function Home() {
             />
             <p className={styles.kade__text}>Kade Stanford</p>
             <p className={styles.kade__text}>
-              I am a full-time student and recently began pursuing web
-              development to gain experience in both business and technology.
+              full-time student and web developer / designer
             </p>
           </div>
         </div>
