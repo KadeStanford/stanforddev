@@ -10,3 +10,7 @@ li {
 a {
   text-decoration: none;
 }
+
+::-webkit-input-placeholder {
+  color: #fff;
+}

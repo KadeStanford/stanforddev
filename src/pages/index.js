@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { useEffect } from "react";
 import { useState, useCallback, useRef } from "react";
 import React from "react";
+import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,9 +41,25 @@ function HomeContent() {
 }
 
 function ContactContent() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const message = formData.get("message");
+    const name = formData.get("name");
+    const email = formData.get("email");
+
+    try {
+      await axios.post("/api/contact", { name, email, message });
+      alert("Message sent successfully");
+    } catch (error) {
+      alert("Failed to send message. Please try again later.");
+      console.error(error);
+    }
+  };
+
   return (
     <div className={styles.contentBoxContact}>
-      <form className={styles.contactForm}>
+      <form className={styles.contactForm} onSubmit={handleSubmit}>
         <h1 className={styles.title}>Have a Question?</h1>
         <p className={styles.subtitle_two}>Send me an email!</p>
 
@@ -51,13 +68,16 @@ function ContactContent() {
           className={styles.contactInput}
           type="text"
           placeholder="Email"
+          required={true}
         />
         <textarea
           className={styles.contactTextArea}
           type="text"
           placeholder="Message"
         />
-        <button className={styles.contactButton}>Send</button>
+        <button className={styles.contactButton} type="submit">
+          Send
+        </button>
       </form>
       <div className={styles.contactInfo}>
         <h1 className={styles.title}>Contact Info</h1>
