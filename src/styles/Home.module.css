@@ -1,0 +1,892 @@
+@font-face {
+  font-family: "Astro";
+  src: url("/Astro.ttf") format("truetype");
+}
+
+@media screen and (min-width: 811px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 98vh;
+    background-color: #f5f5f5;
+  }
+
+  .sideBarImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
+  }
+
+  .sideBarImage:hover {
+    transform: scale(1.1);
+    animation: sway 1s ease-in-out infinite;
+  }
+
+  @keyframes sway {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .sideBar {
+    width: 15%;
+    min-width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(52, 68, 97);
+  }
+
+  .pageContent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(44, 57, 82);
+    overflow-y: scroll;
+  }
+
+  .sideBarContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sideBarButton {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6887a3;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #f5f5f5;
+    font-family: "Astro";
+    width: 40%; /* Set the initial width */
+    transition: all 0.5s;
+    outline: 1px solid #3e709e; /* Add transition for smooth animation */
+  }
+
+  .sideBarButton:hover {
+    background-color: #2c3952;
+    cursor: pointer;
+    width: 55%;
+  }
+
+  .sideBarButtonBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55%;
+  }
+
+  .contentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 30%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .contentBoxHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    text-align: center;
+    min-height: 450px;
+    transition: all 0.5s;
+    max-width: 35%;
+    outline: 5px solid #3e709e;
+    flex: 1 1 auto;
+  }
+
+  .contentBoxHome_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    text-align: center;
+    min-height: 450px;
+    transition: all 0.5s;
+    max-width: 50%;
+    outline: 5px solid #3e709e;
+    flex: 1 1 auto;
+  }
+
+  .contentBoxHome:hover {
+    scale: 1.03;
+  }
+
+  .contentBoxHome_two:hover {
+    scale: 1.02;
+  }
+
+  .homeOrganizer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    justify-content: space-around;
+    transition: all 0.5s;
+    outline: 3px solid #3e709e;
+  }
+
+  .homeOrganizer:hover {
+    scale: 1.008;
+  }
+
+  .contentBox:hover {
+    scale: 1.05;
+  }
+
+  .homeText {
+    color: #f5f5f5;
+    font-size: 20px;
+    font-family: "Astro";
+    text-align: center;
+    margin: 10px;
+  }
+
+  .title {
+    color: #f5f5f5;
+  }
+
+  .subtitle {
+    color: #d2d5da;
+    font-size: 20px;
+  }
+
+  .subtitle_two {
+    color: #d2d5da;
+    font-size: 20px;
+    margin-top: -2%;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    margin-bottom: 2%;
+  }
+
+  .pageHeader {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/codingImage.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 35%;
+    border-bottom: 5px solid #3e709e;
+  }
+
+  .pageTitle {
+    color: transparent;
+    transition: all 0.5s;
+    font-size: calc(10px + 3vmin);
+    font-family: "Astro";
+    text-align: center;
+    margin: 10px;
+    -webkit-text-stroke: 0.01px #ffffff;
+  }
+
+  .pageMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .kadeImage {
+    width: 80%;
+    height: 70%;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+
+  .list {
+    color: #f5f5f5;
+    font-size: 20px;
+    font-family: "Astro";
+    text-align: center;
+    margin: 10px;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    outline: 5px solid #3e709e;
+    min-height: 500px;
+  }
+
+  .contactForm:hover {
+    scale: 1.03;
+  }
+
+  .contactInput {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #3e709e;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-family: "Astro";
+    transition: all 0.5s;
+    outline: 1px solid #3e709e;
+    margin-bottom: 10%;
+  }
+
+  .contentBoxContact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 85%;
+    width: 85%;
+    text-align: center;
+    transition: all 0.5s;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contactInput:hover {
+    background-color: #2c3952;
+    cursor: pointer;
+    scale: 1.1;
+  }
+
+  .contactTextArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #3e709e;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-family: "Astro";
+    transition: all 0.1s;
+    outline: 1px solid #3e709e;
+    margin-bottom: 5%;
+    resize: vertical;
+  }
+
+  .contactTextArea:hover {
+    background-color: #2c3952;
+    cursor: pointer;
+
+    scale: 1.03;
+  }
+
+  .contactButton {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f5b75;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #f5f5f5;
+    font-family: "Astro";
+    width: 40%; /* Set the initial width */
+    transition: all 0.5s;
+    outline: 1px solid #3e709e; /* Add transition for smooth animation */
+  }
+
+  .contactButton:hover {
+    background-color: #2c3952;
+    cursor: pointer;
+    width: 55%;
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    outline: 5px solid #3e709e;
+    flex: 1;
+    min-height: 500px;
+  }
+
+  .contactInfo:hover {
+    scale: 1.007;
+  }
+
+  .contactInfoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 5px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    text-align: center;
+    transition: all 0.5s;
+    min-width: 90%;
+    max-width: 90%;
+    outline: 5px solid #3e709e;
+  }
+
+  .contactInfoBox:hover {
+    scale: 1.04;
+  }
+
+  .contactIcon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .subtitle_contact {
+    color: #e8e8e9;
+    font-family: "Astro";
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px;
+  }
+
+  .subtitle_linkd {
+    color: #e8e8e9;
+    font-family: "Astro";
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 10px;
+  }
+
+  .contactLink {
+    min-width: 100%;
+  }
+
+  .contentBoxProject {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    outline: 3px solid #3e709e;
+    margin-top: 3%;
+  }
+
+  .contentBoxProject:hover {
+    scale: 1.005;
+  }
+
+  .projectOrganizer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .projectBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    min-width: 30%;
+    min-height: 500px;
+    text-align: center;
+    transition: all 0.5s;
+    flex: 1 1 0;
+    outline: 5px solid #3e709e;
+  }
+  .projectBox:hover {
+    scale: 1.03;
+  }
+
+  .projectImage {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+
+  .sideBar {
+    width: 100%;
+    background-color: rgb(52, 68, 97);
+  }
+
+  .sideBarContent {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    transition: all 0.5s;
+  }
+
+  .sideBarButton {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6887a3;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #f5f5f5;
+    font-family: "Astro";
+    width: 40%;
+    transition: all 0.5s;
+    font-size: calc(4px + 1vmin);
+  }
+
+  .sideBarButtonBox {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    transition: all 0.5s;
+  }
+
+  .sideBarImage {
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+  }
+
+  .pageHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/codingImage.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    font-size: calc(8px + 1vmin);
+  }
+
+  .pageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 80%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .pageTitle {
+    color: transparent;
+    -webkit-text-stroke: 1px #e8e8e9;
+  }
+
+  .pageMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    text-align: center;
+    max-width: 80%;
+    transition: all 0.5s;
+  }
+
+  .homeOrganizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f5b75;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    text-align: center;
+    transition: all 0.5s;
+    max-width: 100%;
+    margin-top: 3%;
+  }
+
+  .contentBoxHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .kadeImage {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 2%;
+    border-radius: 50%;
+  }
+
+  .contentBoxHome_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .title {
+    color: #f5f5f5;
+    font-size: calc(13px + 2vmin);
+    transition: all 0.5s;
+  }
+
+  .subtitle_two {
+    color: #d2d5da;
+    font-size: 20px;
+    margin-top: -3%;
+  }
+
+  .homeText {
+    color: #f5f5f5;
+    font-size: 20px;
+  }
+
+  .list {
+    color: #f5f5f5;
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+
+  .contentBoxContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .contactInput {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #3e709e;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-family: "Astro";
+    transition: all 0.5s;
+    margin-bottom: 10%;
+    transition: all 0.5s;
+
+    border: none;
+  }
+
+  .contactTextArea {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #3e709e;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-family: "Astro";
+    transition: all 0.5s;
+    border: none;
+    margin-bottom: 10%;
+    transition: all 0.5s;
+  }
+
+  .contactButton {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #78addf;
+    border-radius: 10px;
+    color: #f5f5f5;
+    font-family: "Astro";
+    transition: all 0.5s;
+    outline: none;
+    border: none;
+    margin-bottom: 10%;
+    transition: all 0.5s;
+  }
+
+  .contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .contactIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 2%;
+  }
+  .contactInfoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e709e;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 90%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+    color: #f5f5f5;
+  }
+
+  .subtitle_contact {
+    font-size: calc(7px + 1vmin);
+    transition: all 0.2s;
+  }
+
+  .contentBoxProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .projectOrganizer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: 3%;
+  }
+
+  .projectBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #324a61;
+    border-radius: 10px;
+    padding: 20px;
+    height: auto;
+    font-family: "Astro";
+    margin: 10px;
+    max-width: 99%;
+    min-width: 90%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-bottom: 3%;
+  }
+}
